@@ -1,0 +1,20 @@
+header {
+  padding: 5rem 0 3rem;
+  /* Para que el video esté en posición absoluta. */
+  position: relative;
+  /* Evitar que el video se desborde. */
+  overflow: hidden;
+  background: linear-gradient(var(--black), var(--black2));
+
+  /* Genera el efecto de un video transparente con un fondo negro. */
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.2;
+}

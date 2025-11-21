@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walter Ricardo Avila Camacho | Portafolio</title>
+    <!-- CDN permite acceder a librerías en servidores cercanos a ti. -->
+    <!-- Resetear todos los estilos iniciales y la página se verá de la misma forma en todos los navegadores. -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/utils.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/sections.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/portafolio.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/skillset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/experience.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css" />
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/fixed.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- class="circle" servirá para que la imagen sea circular -->
+      <img class="circle" src="assets\img\logos\large.png" alt="large logo" />
+      <h1>Walter Ricardo Avila Camacho</h1>
+      <hr />
+      <h2>Software Engineer</h2>
+      <!-- Video: Reproducción automática, repetición, muteado. Es muteado para que reproducir el video al abrir la página web sin incomodar al usuario. -->
+      <video autoplay loop muted>
+        <source src="assets\video\hero.mp4" />
+      </video>
+    </header>
+    <!-- class="open" indica que la navegación estará abierta -->
+    <!-- <nav id="navbar" class="open navbar-fixed"> -->
+    <nav id="navbar">
+      <div>
+        <a href="./">
+          <!-- class="circle" servirá para que la imagen sea circular -->
+          <img
+            class="circle"
+            src="assets\img\logos\small.png"
+            alt="small logo"
+          />
+          <span
+            >Walter Ricardo Avila Camacho <small>Software Engineer</small></span
+          >
+        </a>
+        <button id="hamburger">☰</button>
+      </div>
+      <ul>
+        <!-- Con #, podemos a dirigirnos a una sección mediante su ID dentro de la misma página web. -->
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#skillset">Skillset</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="portafolio">
+        <h3>Portfolio</h3>
+        <hr />
+        <div>
+          <button>
+            <img src="assets\img\portfolio\fleet management system.jpg" />
+            <h4>Fleet Management System</h4>
+          </button>
+          <button>
+            <img src="assets\img\portfolio\Nintendo Disney Art Academy.jpg" />
+            <h4>Nintendo Disney Art Academy</h4>
+          </button>
+          <button>
+            <img
+              src="https://assets.xboxservices.com/assets/20/38/203850f5-1bed-4912-b25f-193ee890c97f.jpg?n=Fortnite_GLP-Page-Hero-1084_876951_1920x1080.jpg"
+            />
+            <h4>Epic Games Fortnite</h4>
+          </button>
+        </div>
+      </section>
+      <!-- class="even" permitirá aplicar el azul a esta sección. -->
+      <section id="skillset" class="even">
+        <h3>Skillset</h3>
+        <hr />
+        <div>
+          <div>
+            <!-- class="tooltip"  -->
+            <img class="svg-skill" src="assets\img\skillset\html.svg" />
+            <!-- Se coloca class="tooltip", ya que se visualizará un tooltip cuando se pase el cursor sobre la imagen. -->
+            <span class="tooltip">HTML</span>
+          </div>
+          <div>
+            <img class="svg-skill" src="assets\img\skillset\css.svg" />
+            <span class="tooltip">CSS</span>
+          </div>
+          <div>
+            <img class="svg-skill" src="assets\img\skillset\js.svg" />
+            <span class="tooltip">Javascript</span>
+          </div>
+          <div>
+            <img class="svg-skill" src="assets\img\skillset\git.png" />
+            <span class="tooltip">GIT</span>
+          </div>
+          <div>
+            <img class="svg-skill" src="assets\img\skillset\npm.png" />
+            <span class="tooltip">npm</span>
+          </div>
+          <div>
+            <img class="svg-skill" src="assets\img\skillset\bash.png" />
+            <span class="tooltip">bash</span>
+          </div>
+          <div>
+            <img class="svg-skill" src="assets\img\skillset\node.svg" />
+            <span class="tooltip">Node.js</span>
+          </div>
+          <div>
+            <img class="svg-skill" src="assets\img\skillset\react.png" />
+            <span class="tooltip">React</span>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <h3>Experience</h3>
+        <hr />
+        <div>
+          <a>
+            <img src="assets\img\experience\nintendo.png" />
+            <h4>Nintendo @ Enter the Studio</h4>
+          </a>
+          <a>
+            <img src="assets\img\experience\google.webp" />
+            <h4>Google Maps @ Randstad</h4>
+          </a>
+          <a>
+            <img src="assets\img\experience\fresh_consulting_logo.jpeg" />
+            <h4>Fresh Consulting LLC</h4>
+          </a>
+          <a>
+            <img src="assets\img\experience\Amazon_Web_Services_Logo.png" />
+            <h4>Amazon LLC</h4>
+          </a>
+        </div>
+      </section>
+      <section id="contact" class="even">
+        <h3>Contact</h3>
+        <hr />
+        <form action="https://formspree.io/f/xrbgavpz" method="post">
+          <label> Your email: <input type="email" name="_replyto" /> </label>
+          <label> Your message: <textarea name="message"></textarea></label>
+          <button type="submit">Send</button>
+        </form>
+        <!-- Se introduce una navegación para incluir links de mis redes sociales. -->
+        <nav id="social-media">
+          <a
+            href="https://www.linkedin.com/in/ricardo-avila-1586331b2/"
+            target="_blank"
+          >
+            <img id="linkedin" src="assets\img\social\linkedin.png" />
+          </a>
+          <a href="https://github.com/Rick0620" target="_blank">
+            <img id="github" src="assets\img\social\github.png" />
+          </a>
+          <a href="https://www.youtube.com/@ricardoavila9863" target="_blank">
+            <img id="youtube" src="assets\img\social\youtube.png" />
+          </a>
+        </nav>
+      </section>
+    </main>
+    <footer>
+      <!-- Para que el siguiente texto sea pequeño, se usa la etiqueta <small>. -->
+      <small>Developed and designed by Walter Ricardo Avila Camacho</small>
+    </footer>
+  </body>
+</html>

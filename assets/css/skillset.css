@@ -1,0 +1,53 @@
+/* Se apunta a hijos directos */
+#skillset > div {
+    /* Preferible para mallas o cuadrículas */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+
+/* Se apunta a hijos sin importar el nivel de anidamiento */
+#skillset img {
+    border-radius: 1rem;
+    max-width: 7rem;
+    cursor: context-menu;
+}
+
+#skillset > div > div {
+    position: relative;
+}
+
+#skillset span {
+    width: 120px;
+    background-color: rgba(0,0,0,0.75);
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: .5rem;
+    position: absolute;
+    z-index: 1;
+    top: -40px;
+    left: 50%;
+    transform: translate(-60px, 10px);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Se evita que elemento no interfiera con el cursor con respecto a la interacción. */
+    pointer-events: none;
+}
+
+#skillset > div > div:hover span{
+    opacity: 1;
+    transform: translate(-60px, 0px);
+}
+
+#skillset span:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    /* Transparencia en la derecha, abajo y izquierda */
+    border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
+}
